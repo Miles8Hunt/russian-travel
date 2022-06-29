@@ -1,6 +1,7 @@
 .page {
   background-color: #2a2c2f;
   max-width: 100vw;
+  min-width: 320px;
   margin: 0 auto;
   padding: 28px 0 24px;
 
@@ -16,14 +17,16 @@
   -moz-text-size-adjust: 100%;
 }
 
-@media screen and (max-width: 984px) {
+@media screen and (max-width: 984px) and (min-width: 568px) {
   .page {
-    min-width: 768px;
+    max-width: 984px;
+    min-width: 568px;
   }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 568px) and (min-width: 320px) {
   .page {
+    max-width: 568px;
     min-width: 320px;
     padding-top: 16px;
   }
